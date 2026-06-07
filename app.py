@@ -26,8 +26,7 @@ def print_gpus_for_animation():
     print("-" * 108)  # Print a dashed line to separate the headers from the data rows
     
     for gpu in results: #loop the results
-        # Index breakdown from our SELECT query: 
-        # gpu[0]=Name, gpu[1]=Manufacturer, gpu[2]=VRAM, gpu[3]=Price, gpu[4]=Benchmark Tool, gpu[5]=Score
+        # Index breakdown from our SELECT query:
         print(f"{gpu[0]:<36} {gpu[1]:<14} {gpu[2]:<15} {gpu[3]:<10} {gpu[4]:<18} {gpu[5]:<10}")
         
     db.close()  # Disconnect from the database to clean up system memory
@@ -55,8 +54,7 @@ def print_gpus_for_gaming():
     print("-" * 108)  # Print a dashed line to separate the headers from the data rows
     
     for gpu in results: #loop the results
-        # Index breakdown from our SELECT query: 
-        # gpu[0]=Name, gpu[1]=Manufacturer, gpu[2]=VRAM, gpu[3]=Price, gpu[4]=Benchmark Tool, gpu[5]=Score
+        # Index breakdown from our SELECT query:
         print(f"{gpu[0]:<36} {gpu[1]:<14} {gpu[2]:<15} {gpu[3]:<10} {gpu[4]:<18} {gpu[5]:<10}")
         
     db.close()  # Disconnect from the database to clean up system memory
@@ -85,7 +83,6 @@ def print_gpus_for_office():
     
     for gpu in results: #loop the results
         # Index breakdown from our SELECT query: 
-        # gpu[0]=Name, gpu[1]=Manufacturer, gpu[2]=VRAM, gpu[3]=Price, gpu[4]=Benchmark Tool, gpu[5]=Score
         print(f"{gpu[0]:<36} {gpu[1]:<14} {gpu[2]:<15} {gpu[3]:<10} {gpu[4]:<18} {gpu[5]:<10}")
         
     db.close()  # Disconnect from the database to clean up system memory
