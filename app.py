@@ -111,4 +111,4 @@ while True:
         break  # Shut down the while loop to terminate the program execution
     else:  # Capture any invalid text or unexpected number keys entered by the user
         print("That was not an option\n")  # Show an error notification message
-        break  # Stop the infinite loop safely
+ 
